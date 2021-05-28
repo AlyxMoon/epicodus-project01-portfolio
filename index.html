@@ -26,7 +26,30 @@
   <title>Allister Kays</title>
 </head>
 <body>
-  <header class="d-flex justify-content-center align-items-center">
+  <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li class="navbar-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+
+      <li class="navbar-item">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+
+      <li class="navbar-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+
+      <li class="navbar-item">
+        <a class="nav-link" href="#background">Background / Skills</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header 
+    id="home"
+    class="d-flex justify-content-center align-items-center"
+  >
     <h1 class="mb-5">Allister Moon Kays</h1>
 
     <div class="label-background"></div>
@@ -69,7 +92,7 @@
   </div>
 
   <main class="container my-5">
-    <section class="row mb-4">
+    <section id="about" class="row mb-4">
       <div class="col-12 mb-2">
         <h2 class="text-center text-md-left">About Me</h2>
       </div>
@@ -92,7 +115,7 @@
       </div>
     </section>
 
-    <section class="row mb-4">
+    <section id="projects" class="row mb-4">
       <div class="col-12 mb-2">
         <h2 class="text-center text-md-left">Epicodus Projects</h2>
       </div>
@@ -419,7 +442,7 @@
       </div>
     </section>    
 
-    <section class="row">
+    <section id="background" class="row">
       <div class="col-12">
         <h2 class="text-center text-md-left">My Background and Skills</h2>
       </div>
