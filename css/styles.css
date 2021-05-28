@@ -1,0 +1,28 @@
+header {
+  position: relative;
+  height: 400px;
+  width: 100%;
+
+  background-color: black;
+  color: white;
+}
+
+header h1 {
+  position: relative;
+  z-index: 10;
+}
+
+.svg-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 2;
+}
+
+.header-slice-1 {
+  height: 100%;
+  width: 100%;
+}
