@@ -2,6 +2,7 @@
 /* Layout/Structure */
 /* Header/Navbar */
 /* Typography */
+/* Media */
 
 /* Layout/Structure */
 body {
@@ -34,4 +35,15 @@ h1 {
 
 h2 {
   font-size: 3rem;
+}
+
+.carousel-item {
+  background-color: black;
+}
+.carousel img {
+  margin: 0 auto;
+  /* max-height: 300px; */
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
 }
