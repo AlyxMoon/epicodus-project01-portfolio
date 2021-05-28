@@ -3,6 +3,7 @@
 /* Header/Navbar */
 /* Typography */
 /* Media */
+/* MISC */
 
 :root {
   --animation-state: running;
@@ -108,4 +109,24 @@ h2 {
   max-height: 600px;
   width: auto;
   max-width: 100%;
+}
+
+/* MISC */
+body::-webkit-scrollbar {
+  border-left: 2px solid rgba(0, 0, 0, 0.5);
+  width: 16px;
+}
+
+body::-webkit-scrollbar-button {
+  background-color: #343a40;
+  height: 56px;
+}
+
+body::-webkit-scrollbar-button:end {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2DAFAF;
+  border-left: 2px solid rgba(0, 0, 0, 0.5);
 }
