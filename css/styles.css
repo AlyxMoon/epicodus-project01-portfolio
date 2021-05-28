@@ -59,12 +59,19 @@ header .label-background {
   right: 5px;
 
   height: 30px;
-  width: 155px;
+  width: 160px;
 
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Typography */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif", serif;
+}
 
 h1 {
   position: relative;
