@@ -3,8 +3,7 @@
   --side-z-val: 270px;
   --backface-state: visible;
 
-  width: 200px;
-  height: 200px;
+  text-align: center;
   margin: 100px auto 300px;
 
   perspective: 720;
