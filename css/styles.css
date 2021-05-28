@@ -76,6 +76,10 @@ h2 {
   font-size: 3rem;
 }
 
+.social-links a {
+  font-size: 1.3rem;
+}
+
 /* Media */
 
 .carousel-item {
