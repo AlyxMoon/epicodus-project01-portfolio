@@ -11,6 +11,11 @@
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  animation-play-state: var(--animation-state);
+}
+
+input[type="checkbox"]:not(:checked) + .svg-wrapper {
+  --animation-state: paused;
 }
 
 svg {
@@ -22,6 +27,7 @@ svg polygon {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-play-state: var(--animation-state);
 }
 
 /* top left slice */

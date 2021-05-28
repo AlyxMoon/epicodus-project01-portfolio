@@ -4,6 +4,10 @@
 /* Typography */
 /* Media */
 
+:root {
+  --animation-state: running;
+}
+
 /* Layout/Structure */
 body {
   background-color: #F3F3F3;
@@ -21,6 +25,39 @@ header {
   width: 100%;
 
   overflow: hidden;
+}
+
+header input[type="checkbox"],
+header label {
+  position: absolute;
+  z-index: 3;
+}
+
+header input[type="checkbox"] {
+  right: 10px;
+  bottom: 12px;
+
+  width: 1rem;
+  height: 1rem;
+}
+
+header label {
+  right: 30px;
+  bottom: 0;
+
+  color: white;
+}
+
+header .label-background {
+  position: absolute;
+  z-index: 3;
+  bottom: 5px;
+  right: 5px;
+
+  height: 30px;
+  width: 155px;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Typography */
