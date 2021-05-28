@@ -24,7 +24,16 @@ h1 {
   z-index: 2;
 }
 
-.header-slice-1 {
+svg {
   height: 100%;
   width: 100%;
 }
+
+/* top left slice */
+svg polygon:nth-child(1) { fill: #4CC6C6; }
+/* top right slice */
+svg polygon:nth-child(2) { fill: #5D80D0; }
+/* bottom left slice */
+svg polygon:nth-child(3) { fill: #FFCB62; }
+/* bottom right slice */
+svg polygon:nth-child(4) { fill: #FFA962; }
