@@ -37,6 +37,8 @@ h2 {
   font-size: 3rem;
 }
 
+/* Media */
+
 .carousel-item {
   background-color: black;
 }
@@ -46,4 +48,10 @@ h2 {
   height: auto;
   max-width: 100%;
   max-height: 400px;
+}
+
+.thailand-image {
+  max-height: 600px;
+  width: auto;
+  max-width: 100%;
 }
