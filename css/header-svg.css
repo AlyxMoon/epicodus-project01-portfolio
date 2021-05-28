@@ -1,0 +1,81 @@
+.svg-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 2;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+svg polygon {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* top left slice */
+svg polygon:nth-child(1) { 
+  fill: #4CC6C6;
+  animation-name: breathe1;
+}
+/* top right slice */
+svg polygon:nth-child(2) {
+  fill: #5D80D0;
+  animation-name: breathe2;
+}
+/* bottom left slice */
+svg polygon:nth-child(3) { 
+  fill: #FFCB62; 
+  animation-name: breathe3;
+}
+/* bottom right slice */
+svg polygon:nth-child(4) { 
+  fill: #FFA962; 
+  animation-name: breathe4;
+}
+
+@keyframes breathe1 {
+  0% {
+    fill: #4CC6C6;
+  }
+
+  100% {
+    fill: #2CAEAE;
+  }
+}
+
+@keyframes breathe2 {
+  0% {
+    fill: #5D80D0;
+  }
+
+  100% {
+    fill: #3E64BC;
+  }
+}
+
+@keyframes breathe3 {
+  0% {
+    fill: #FFCB62;
+  }
+
+  100% {
+    fill: #FFC041;
+  }
+}
+
+@keyframes breathe4 {
+  0% {
+    fill: #FFA962;
+  }
+
+  100% {
+    fill: #FF9741;
+  }
+}
