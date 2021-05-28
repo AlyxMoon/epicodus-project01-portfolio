@@ -1,8 +1,23 @@
+/* TABLE OF CONTENTS */
+/* Layout/Structure */
+/* Header/Navbar */
+/* Typography */
+/* Miscellaneous */
+
+/* Layout/Structure */
+body {
+  background-color: #F3F3F3;
+}
+
+/* Header/Navbar */
+
 header {
   position: relative;
   height: 400px;
   width: 100%;
 }
+
+/* Typography */
 
 h1 {
   position: relative;
@@ -13,6 +28,12 @@ h1 {
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+h2 {
+  font-size: 3rem;
+}
+
+/* Miscellaneous */
 
 .svg-wrapper {
   position: absolute;
