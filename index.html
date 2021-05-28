@@ -93,23 +93,6 @@
   </div>
 
   <main class="container my-5">
-
-    <aside class="my-5">
-      <h4 class="text-center">Here's a random animation</h4>
-
-      <div class="rotate-numbers-scene">
-        <div class="rotate-numbers-wrapper">
-          <div class="number-1">1</div>
-          <div class="number-2">2</div>
-          <div class="number-3">3</div>
-          <div class="number-4">4</div>
-          <div class="number-5">5</div>
-          <div class="number-6">6</div>
-          <div class="number-7">7</div>
-        </div>
-      </div>
-    </aside>
-
     <section id="about" class="row mb-4">
       <div class="col-12 mb-2">
         <h2 class="text-center text-md-left">About Me</h2>
@@ -548,8 +531,36 @@
       </div>
     </section>
 
-    
-  </main>
+    <aside class="my-5">
+      <h2 class="text-center">Here's a random animation</h2>
 
+      <div class="rotate-numbers-scene">
+        <label for="toggle-animation">Toggle Animation</label>
+        <input
+          type="checkbox"
+          name="toggle-animation"
+          checked
+        />
+
+        <label for="toggle-backface">Toggle Backface Visibility</label>
+        <input
+          type="checkbox"
+          name="toggle-backface"
+          checked
+        />
+
+        <div class="rotate-numbers-wrapper">
+          <div class="number-1">1</div>
+          <div class="number-2">2</div>
+          <div class="number-3">3</div>
+          <div class="number-4">4</div>
+          <div class="number-5">5</div>
+          <div class="number-6">6</div>
+          <div class="number-7">7</div>
+          <div class="number-8">8</div>
+        </div>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>

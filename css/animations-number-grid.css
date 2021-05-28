@@ -1,27 +1,65 @@
-.rotate-numbers-wrapper {
-  --length-of-side: 260px;
-  --side-z-val: 360px;
+.rotate-numbers-scene {
+  --length-of-side: 180px;
+  --side-z-val: 270px;
+  --backface-state: visible;
 
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 300px;
+
+  perspective: 720;
+  -webkit-perspective: 720; 
+  transform: translateZ(-100px);
+}
+
+.rotate-numbers-scene label {
+  position: relative;
+  top: -100px;
+}
+
+.rotate-numbers-scene input {
+  position: relative;
+  top: -100px;
+}
+
+.rotate-numbers-scene label:nth-of-type(2) {
+  position: relative;
+  top: -100px;
+}
+
+.rotate-numbers-scene input:nth-of-type(2) {
+  position: relative;
+  top: -100px;
+}
+
+input[type="checkbox"]:nth-of-type(1):not(:checked) ~ .rotate-numbers-wrapper {
+  --animation-state: paused;
+}
+
+input[type="checkbox"]:nth-of-type(2):not(:checked) ~ .rotate-numbers-wrapper {
+  --backface-state: hidden;
+}
+
+.rotate-numbers-wrapper {
   width: var(--length-of-side);
   height: var(--length-of-side);
-
   margin: 0 auto;
 
   position: relative;
-
-  perspective: 900;
+  
   transform-style: preserve-3d;
   transform: rotateY(0deg);
 
   animation-name: spinning;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-play-state: var(--animation-state);
 }
 
-.rotate-numbers-wrapper div[class^="number"] {
-  height: var(--length-of-side);
-  width: var(--length-of-side);
+.rotate-numbers-wrapper div {
+  height: 100%;
+  width: 100%;
   
   margin: 5px;
 
@@ -31,15 +69,21 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+
   color: white;
-
-  font-size: 2rem;
   font-family:'Courier New', Courier, monospace;
+  font-size: 5rem;
+  font-weight: bold;
 
-  /* backface-visibility: hidden; */
+  backface-visibility: var(--backface-state);
+}
+
+.rotate-numbers-wrapper div::selection {
+  background-color: #31B2B2;
 }
 
 .number-1 {
@@ -47,27 +91,31 @@
 }
 
 .number-2 {
-  transform: rotateY(51deg) translateZ(var(--side-z-val));
+  transform: rotateY(45deg) translateZ(var(--side-z-val));
 }
 
 .number-3 {
-  transform: rotateY(102deg) translateZ(var(--side-z-val));
+  transform: rotateY(90deg) translateZ(var(--side-z-val));
 }
 
 .number-4 {
-  transform: rotateY(153deg) translateZ(var(--side-z-val));
+  transform: rotateY(135deg) translateZ(var(--side-z-val));
 }
 
 .number-5 {
-  transform: rotateY(204deg) translateZ(var(--side-z-val));
+  transform: rotateY(180deg) translateZ(var(--side-z-val));
 }
 
 .number-6 {
-  transform: rotateY(255deg) translateZ(var(--side-z-val));
+  transform: rotateY(225deg) translateZ(var(--side-z-val));
 }
 
 .number-7 {
-  transform: rotateY(306deg) translateZ(var(--side-z-val));
+  transform: rotateY(270deg) translateZ(var(--side-z-val));
+}
+
+.number-8 {
+  transform: rotateY(315deg) translateZ(var(--side-z-val));
 }
 
 @keyframes spinning {
