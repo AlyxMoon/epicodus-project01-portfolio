@@ -8,6 +8,10 @@ body {
   background-color: #F3F3F3;
 }
 
+.code-link {
+  float: right;
+}
+
 /* Header/Navbar */
 
 header {
