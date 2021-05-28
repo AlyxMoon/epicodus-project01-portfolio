@@ -1,11 +1,16 @@
 .svg-wrapper {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: -50vw;
+  bottom: -50vw;
+  left: -50vw;
+  right: -50vw;
 
   z-index: 2;
+
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 svg {
@@ -38,6 +43,16 @@ svg polygon:nth-child(3) {
 svg polygon:nth-child(4) { 
   fill: #FFA962; 
   animation-name: breathe4;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes breathe1 {
