@@ -1,0 +1,81 @@
+.rotate-numbers-wrapper {
+  --length-of-side: 260px;
+  --side-z-val: 360px;
+
+  width: var(--length-of-side);
+  height: var(--length-of-side);
+
+  margin: 0 auto;
+
+  position: relative;
+
+  perspective: 900;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+
+  animation-name: spinning;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rotate-numbers-wrapper div[class^="number"] {
+  height: var(--length-of-side);
+  width: var(--length-of-side);
+  
+  margin: 5px;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  color: white;
+
+  font-size: 2rem;
+  font-family:'Courier New', Courier, monospace;
+
+  /* backface-visibility: hidden; */
+}
+
+.number-1 {
+  transform: rotateY(0deg) translateZ(var(--side-z-val));
+}
+
+.number-2 {
+  transform: rotateY(51deg) translateZ(var(--side-z-val));
+}
+
+.number-3 {
+  transform: rotateY(102deg) translateZ(var(--side-z-val));
+}
+
+.number-4 {
+  transform: rotateY(153deg) translateZ(var(--side-z-val));
+}
+
+.number-5 {
+  transform: rotateY(204deg) translateZ(var(--side-z-val));
+}
+
+.number-6 {
+  transform: rotateY(255deg) translateZ(var(--side-z-val));
+}
+
+.number-7 {
+  transform: rotateY(306deg) translateZ(var(--side-z-val));
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
